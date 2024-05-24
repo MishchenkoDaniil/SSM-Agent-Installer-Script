@@ -2,6 +2,11 @@
 
 This script installs the Amazon SSM (Systems Manager) Agent on a Debian-based system. It supports both `x86_64` and `aarch64` architectures and provides an option to remove the existing Snap installation of the SSM Agent if present.
 
+## Prerequisites
+IAM Role and Policy:
+Ensure that the EC2 instance has an IAM role attached with the AmazonSSMManagedInstanceCore policy.
+If the role does not exist, create a new IAM role with the AmazonSSMManagedInstanceCore policy and attach it to your EC2 instance.
+
 ## Usage
 
 1. Clone the repository or download the `install_ssm.sh` script.
